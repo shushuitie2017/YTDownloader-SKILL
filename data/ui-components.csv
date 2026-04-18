@@ -1,0 +1,47 @@
+Component,CSS Class,HTML ID,Panel,Description,Events,Keywords
+URL Input,.input-row input,url-input,Center,YouTube URL text input field,keydown (Enter → fetchInfo),url input text field youtube link
+Get Info Button,.input-row button,info-btn,Center,Fetch video metadata button,click → fetchInfo(),info button fetch metadata
+Error Message,.error,error-msg,Center,Red error text (toggle .hidden),N/A (programmatic),error message display red
+Video Info Section,.video-info,video-info,Center,Video metadata card container (hidden until info fetched),N/A,video info card section container
+Video Player,video,player,Center,HTML5 video with poster and stream proxy,N/A,player video preview stream
+Preview Quality Select,.player-overlay select,preview-quality,Center,Quality dropdown overlay (720p / 1080p+ DASH),change → setPreviewQuality(),preview quality select dash 1080p shaka
+Preview Quality Row,.player-overlay,preview-quality-row,Center,Container for preview quality selector (hidden),N/A,preview quality row container
+Subtitle Language Select,.player-overlay-bottom select,subtitle-lang,Center,Subtitle language for in-player preview,change → debounced loadSubtitleTrack(),subtitle language select preview player
+Subtitle Row,.player-overlay-bottom,subtitle-row,Center,Container for subtitle language selector (hidden bottom 48px),N/A,subtitle row container
+Video Title,.info-details h2,video-title,Center,Video title heading,N/A,title heading video name
+Channel Name,.meta span,channel,Center,Uploader channel name,N/A,channel uploader name
+Duration,.meta span,duration,Center,Video duration (MM:SS format),N/A,duration time length
+View Count,.meta span,views,Center,Formatted view count (K/M suffix),N/A,views count watch
+Upload Date,.meta span,upload-date,Center,Upload date (YYYY/MM/DD hideable),N/A,date upload published
+Quality Select,.download-controls select,quality-select,Center,Download quality/format dropdown,N/A,quality select download resolution format
+Subtitle Download Select,.subtitle-download,subtitle-download,Center,Subtitle language for download (SRT),N/A,subtitle download select srt language
+Download Button,.download-btn,download-btn,Center,Green download action button,click → startDownload(),download button start green
+Subtitle Download Button,.sub-btn,sub-download-btn,Center,SRT subtitle download button (hidden),click → downloadSubtitle(),subtitle srt download button save
+Progress Section,.progress-section,progress-section,Center,Progress bar container (hidden until download starts),N/A,progress section container bar
+Progress Status,.progress-status,progress-status,Center,Status text (Starting/Downloading/Processing/Done),N/A,progress status text label
+Progress Percent,.progress-percent,progress-percent,Center,Percentage display (0-100%),N/A,progress percent number
+Progress Bar,.progress-bar-fill,progress-bar,Center,Width-animated fill bar (add .done for green gradient),N/A,progress bar fill animation green
+Progress Speed,.progress-meta span,progress-speed,Center,Download speed display,N/A,progress speed mbps
+Progress ETA,.progress-meta span,progress-eta,Center,Estimated time / filename on done,N/A,progress eta time remaining filename
+Search Input,.search-controls input,search-input,Left,Search text input with dynamic placeholder,keydown (Enter → searchVideos),search input text query keyword
+Mode Radios,.mode-row input[name=mode],N/A,Left,Keyword / Channel / Trending radio buttons,change → showSuggestions(mode),mode radio keyword channel trending
+Sort Radios,.sort-row input[name=sort],N/A,Left,Most Viewed / Newest radio buttons,N/A,sort radio views date newest
+Period Radios,.sort-row input[name=period],N/A,Left,This Week / Month / Year radio buttons,change → toggle yearInput,period radio week month year trending
+Year Input,.year-input,year-input,Left,Number input for year period (hidden),N/A,year input number trending period
+Duration Filter,.sort-row input[name=duration],N/A,Left,All / <30min / ≥30min radio buttons,N/A,duration filter short long radio
+Language Filter,.lang-filter,lang-filter,Left,Dropdown: All / zh-cn / zh-tw / en / ja,change → showSuggestions(mode),language filter select dropdown
+Search Button,.search-btn,search-btn,Left,Execute search action button,click → searchVideos(),search button execute action
+Search Results,.search-results,search-results,Left,Results container (also hosts suggestions),N/A,search results container list
+Result Card,.result-card,N/A,Left,Clickable video card (thumb + title + meta),click → selectResult(url),result card video thumbnail click
+Suggestion Chips,.suggestion-chips .chip,N/A,Left,Clickable keyword tags,click → fill search + searchVideos(),suggestion chip keyword tag
+Category Tabs,.category-tabs .category-tab,N/A,Left,Channel category selector tabs,click → set activeCategory + rerender,category tab channel selector
+Channel Item,.channel-item,N/A,Left,Clickable channel row (name + subs badge),click → fill search + searchVideos(),channel item row click name subs
+Folder Input,.folder-controls input,folder-input,Right,Read-only folder path display,N/A,folder path input display readonly
+Browse Button,.folder-buttons button,N/A,Right,Open native folder picker,click → browseFolder(),browse button folder picker dialog
+Open Button,.folder-buttons button,N/A,Right,Open current folder in Explorer,click → openCurrentFolder(),open button folder explorer windows
+History List,.history-list,history-list,Right,Download history items container,N/A,history list container download
+History Item,.history-item,N/A,Right,Download record (title + meta + badge),N/A,history item record download
+History Delete,.history-delete-btn,N/A,Right,Delete single history item button (x),click → removeFromHistory(index),history delete remove button
+Open Folder Button,.open-folder-btn,N/A,Right,Open file location in Explorer (per-item),click → openFileFolder(filepath),open folder button file location explorer
+Clear History,.clear-btn,clear-history-btn,Right,Delete all history button,click → clearHistory(),clear history button delete all
+UI Language,.header select,ui-lang,Header,Language selector (English/中文/日本語),change → applyLanguage(),ui language i18n select english chinese japanese

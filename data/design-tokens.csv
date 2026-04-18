@@ -1,0 +1,40 @@
+Token,Value,Usage,Category,Keywords,CSS Property
+Background Body,#0f0f0f,Page body background,color,background body dark base,background-color
+Panel Background,#161616,Left/right sidebar panels,color,panel sidebar left right,background-color
+Card Primary,#1a1a1a,Info cards search input progress section,color,card info input section,background-color
+Card Secondary,#1e1e1e,Result cards history items folder buttons,color,card result history folder button,background-color
+Input Background,#111,Search/URL text inputs,color,input search url text field,background-color
+Border Divider,#2a2a2a,Input borders badges track background,color,border divider separator line badge,border-color
+Accent Red,#ff4444,Primary buttons focus states branding,color,accent red button primary brand action,color / background-color
+Accent Red Hover,#e03030,Button hover states,color,accent red hover button press,background-color
+Accent Green,#22c55e,Download button success state,color,green download success complete button,background-color
+Accent Green Hover,#16a34a,Download button hover,color,green download hover press,background-color
+Text Primary,#e8e8e8,Main body text,color,text primary body main white,color
+Text Secondary,#ccc / #ddd,Info text titles,color,text secondary info title label,color
+Text Tertiary,#888 / #666,Labels meta info subtle,color,text tertiary meta label dim subtle,color
+Text Quaternary,#555,Placeholders very subtle text,color,text placeholder dim faint subtle,color
+Rank Gold,#ff444430 bg + #ff6666 text,Top 1st result/channel badge,color,rank first gold top badge,background-color + color
+Rank Silver,#ff884430 bg + #ffaa66 text,Top 2nd result/channel badge,color,rank second silver badge,background-color + color
+Rank Bronze,#ffcc4430 bg + #ffcc66 text,Top 3rd result/channel badge,color,rank third bronze badge,background-color + color
+Radius Button,8px,Buttons inputs chips,spacing,radius button input rounded corner,border-radius
+Radius Panel,12px,Panels cards large containers,spacing,radius panel card container large,border-radius
+Radius Chip,14px,Suggestion chips small tags,spacing,radius chip tag small pill,border-radius
+Panel Padding,16px,All panels internal spacing,spacing,padding panel internal space,padding
+Layout Gap,16px,Main 3-column grid gap,spacing,gap layout grid column space,gap
+Controls Gap,8-12px,Search controls flex containers,spacing,gap controls flex search input button,gap
+Progress Bar Height,8px,Progress indicator track,spacing,progress bar height track indicator,height
+Font Family System,"-apple-system BlinkMacSystemFont 'Segoe UI' Roboto Helvetica Arial sans-serif",All text,typography,font family system stack,font-family
+Header Size,26px / weight 700 / letter-spacing -0.5px,H1 header,typography,header title h1 large bold,font-size / font-weight / letter-spacing
+Panel Title,14px / weight 600 / uppercase / letter-spacing 0.5px,Section headers,typography,panel title section header uppercase,font-size / font-weight / text-transform
+Result Title,12px / weight 600 / line-height 1.3 / clamp 2 lines,Video card title,typography,result card title small clamp,font-size / font-weight / -webkit-line-clamp
+Video Info Title,16px / weight 600 / line-height 1.4,Main video title in center panel,typography,video title info center heading,font-size / font-weight / line-height
+Transition Hover,0.15s,Border/color changes on hover,animation,transition hover border color fast,transition
+Transition Button,0.2s,Button background hover/focus,animation,transition button background hover focus,transition
+Transition Progress,0.3s ease,Progress bar width animation,animation,transition progress bar width fill,transition
+Transition Slide,0.3s ease,Card entrance animation (opacity + translateY),animation,transition slide card enter appear,transition / animation
+Transition Press,0.1s,Button active press scale,animation,transition press active button scale,transition
+Spinner Speed,0.6s linear infinite,Loading spinner rotation,animation,spinner loading rotation animation,animation
+Desktop Grid,280px | 1fr | 300px,3-column layout (left | center | right),layout,grid desktop column three layout,grid-template-columns
+Desktop Max Width,1400px,Layout container max width,layout,max width container desktop,max-width
+Mobile Breakpoint,1024px,Single column responsive breakpoint,layout,mobile responsive breakpoint single column,@media max-width
+Sticky Panels,top: 16px,Left/right panels stick on scroll (desktop),layout,sticky panel scroll fixed position,position: sticky / top

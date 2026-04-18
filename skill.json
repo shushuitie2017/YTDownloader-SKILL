@@ -1,0 +1,22 @@
+{
+  "name": "yt-dl-dev",
+  "displayName": "YT Downloader Dev Skill",
+  "description": "Development intelligence for Flask + vanilla JS YouTube downloader. 152 entries across 7 domains with BM25 search.",
+  "version": "1.0.0",
+  "author": "shushuitie2017",
+  "license": "MIT",
+  "repository": "https://github.com/shushuitie2017/YTDownloader-SKILL",
+  "domains": [
+    "api",
+    "ui",
+    "pitfalls",
+    "ytdlp",
+    "design",
+    "subtitle",
+    "download"
+  ],
+  "entries": 152,
+  "requirements": {
+    "python": ">=3.6"
+  }
+}
